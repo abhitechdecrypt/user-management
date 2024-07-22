@@ -1,0 +1,50 @@
+/* UserCard.css */
+
+@import "../index.scss";
+
+
+.user-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    text-align: left;
+    flex: 1 0 300px;
+  }
+  
+  .user-card__name {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .user-card__email,
+  .user-card__role,
+  .user-card__date,
+  .user-card__status {
+    margin: 4px 0;
+    font-size: 1em;
+    color: #666;
+  }
+  .footer__section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .danger__button{
+      @include secondary-button;
+}
+.edit__button{
+    @include rounded-btn-style
+  }
+
+  .user-card:hover{
+    transition: all 0.5s linear, transform 0.5s linear;
+    background-color: $light-color;
+    color: $dark-color;
+    cursor: pointer;
+    transform: translateY(-10px)
+  }

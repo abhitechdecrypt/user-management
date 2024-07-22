@@ -1,0 +1,21 @@
+@import "../index.scss";
+
+header {
+   @include header-style;
+   z-index: 100;
+   .user__home {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      text-shadow: 2px 2px 7px;
+   }
+   a {
+      color: $light-color;
+      text-decoration: none;
+      padding: 10px;
+   }
+   a.active {
+      color: $secondary-color;
+      text-decoration: underline;
+   }
+}
